@@ -8,7 +8,10 @@
 </head>
 <body>
     <h2>hello world</h2>
-    <div>this is page tamplates</div>
+    <form action="/add/" method="POST">
+        <input type="text" name="good">
+        <button>Добавить</button>
+    </form>
     <ol>
         {% for good in goods %}
             <li>{{ good }}</li>
